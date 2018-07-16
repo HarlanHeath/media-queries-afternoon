@@ -1,0 +1,109 @@
+/*////NAVIGATION BAR ////////////////////////////////////////*/
+.mainNav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.bootStrap {
+  margin-left: 90px;
+  height: 52px;
+  width: 200px;
+  color: #fecb1c;
+  font-family: "Kaushan Script", cursive;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.navItemList {
+  width: 600px;
+  margin-right: 90px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  align-content: flex-end;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.navItem {
+  text-align: center;
+  color: white;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14.5px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hamburger {
+  height: 35px;
+  width: 5px;
+  background-color: #fecb1c;
+  color: white;
+  display: none;
+}
+
+/* @media (min-width: 100px) {
+  .mainNav-default {
+  }
+} */
+
+/*////HEADER BODY ////////////////////////////////////////*/
+.mainHeader {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: center;
+}
+
+/* .headerContainer {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+} */
+
+.containerOne {
+  background-color: bisque;
+  width: 100%;
+  height: 500px;
+}
+@media (max-width: 768px) {
+  .logo,
+  .navItemList {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    width: 100%;
+  }
+  .mainNav {
+    background-color: #212529;
+  }
+  header {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-height: 50vh) {
+  .mainNave {
+    background-color: #212529;
+  }
+}
